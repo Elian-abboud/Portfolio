@@ -1,16 +1,21 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 export default defineConfig({
     plugins: [react()],
+
+    // 👇 مهم جداً للنشر على GitHub Pages
+    base: "/Portfolio/",
+
     resolve: {
         alias: {
-            '@assets': path.resolve(__dirname, 'src/assets')
-        }
+            "@assets": path.resolve(__dirname, "src/assets"),
+        },
     },
+
     server: {
-        host: '0.0.0.0',
-        allowedHosts: true
-    }
+        host: "0.0.0.0",
+        allowedHosts: true,
+    },
 });
