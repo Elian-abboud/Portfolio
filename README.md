@@ -41,5 +41,3 @@ It highlights my work in frontend development, UI design, and real-world project
 - React Icons
 
 ---
-
-## 📁 Project Structure
