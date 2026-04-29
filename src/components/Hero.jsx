@@ -88,10 +88,10 @@ export default function Hero({
                 View Projects
               </button>
 
-              {/* ✅ FIXED HERE */}
+              {/* التعديل هنا: إزالة السلاش وتحديد اسم الملف المحمل */}
               <a
-                href={`${import.meta.env.BASE_URL}Elian_Abboud_CV.pdf`}
-                download
+                href="Elian_Abboud_CV.pdf"
+                download="Elian_Abboud_CV.pdf"
                 className="btn-outline-gold"
                 aria-label="Download CV"
               >
