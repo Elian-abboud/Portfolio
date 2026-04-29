@@ -1,4 +1,5 @@
 import { FiCode, FiDownload, FiMail } from "react-icons/fi";
+import cvFile from "@assets/Elian_Abboud_CV.pdf";
 
 export default function Hero({
   handleMouseMove,
@@ -90,7 +91,7 @@ export default function Hero({
 
               {/* التعديل هنا: إزالة السلاش وتحديد اسم الملف المحمل */}
               <a
-                href="Elian_Abboud_CV.pdf"
+                href={cvFile}
                 download="Elian_Abboud_CV.pdf"
                 className="btn-outline-gold"
                 aria-label="Download CV"
