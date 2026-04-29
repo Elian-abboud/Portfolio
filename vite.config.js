@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
     plugins: [react()],
 
-    // 👇 مهم جداً للنشر على GitHub Pages
-    base: "/Portfolio/",
+    // 👇 ذكي: لو dev → / ، لو build → /Portfolio/
+    base: command === "serve" ? "/" : "/Portfolio/",
 
     resolve: {
         alias: {
@@ -18,4 +18,4 @@ export default defineConfig({
         host: "0.0.0.0",
         allowedHosts: true,
     },
-});
+}));
