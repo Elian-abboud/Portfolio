@@ -1,4 +1,11 @@
-import { FiMail, FiGithub, FiLinkedin, FiCreditCard } from "react-icons/fi";
+import {
+  FiMail,
+  FiGithub,
+  FiLinkedin,
+  FiCreditCard,
+  FiEye,
+} from "react-icons/fi";
+import cardFile from "../assets/EA_BusinessCard.pdf";
 
 export default function Contact({ TorusDecor, AnimatedSection }) {
   return (
@@ -132,12 +139,13 @@ export default function Contact({ TorusDecor, AnimatedSection }) {
                 </a>
 
                 <a
-                  href="/EA_BusinessCard.pdf"
-                  download
-                  className="btn-outline-gold w-full justify-center"
+                  href={cardFile}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline-gold"
                 >
-                  <FiCreditCard className="h-4 w-4" />
-                  Download Card
+                  <FiEye className="h-4 w-4" />
+                  View Business Card
                 </a>
               </div>
             </div>

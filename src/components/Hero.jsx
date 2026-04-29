@@ -1,6 +1,5 @@
-import { FiCode, FiDownload, FiMail, FiEye } from "react-icons/fi";
+import { FiCode, FiMail, FiEye } from "react-icons/fi";
 import cvFile from "../assets/Elian_Abboud_CV.pdf";
-
 export default function Hero({
   handleMouseMove,
   pointer,
@@ -83,12 +82,12 @@ export default function Hero({
               <button
                 onClick={() => handleScroll("projects")}
                 className="btn-gold"
+                aria-label="View projects section"
               >
                 <FiCode className="h-4 w-4" />
                 View Projects
               </button>
 
-              {/* VIEW CV (FIXED ICON) */}
               <a
                 href={cvFile}
                 target="_blank"
@@ -98,10 +97,10 @@ export default function Hero({
                 <FiEye className="h-4 w-4" />
                 View My CV
               </a>
-
               <button
                 onClick={() => handleScroll("contact")}
                 className="btn-outline-gold"
+                aria-label="Go to contact section"
               >
                 <FiMail className="h-4 w-4" />
                 Contact Me
@@ -110,17 +109,40 @@ export default function Hero({
           </AnimatedSection>
         </div>
 
-        {/* Right */}
+        {/* Right (Image) */}
         <AnimatedSection delay={200}>
           <div className="relative mx-auto flex max-w-[320px] justify-center">
-            <img
-              src={profileImg}
-              alt="Elian Abboud portrait"
-              loading="lazy"
-              className="h-64 w-full max-w-[256px] rounded-full object-cover object-top shadow-[0_0_45px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-105"
+            <div className="relative flex h-72 w-[288px] items-center justify-center rounded-full">
+              <img
+                src={profileImg}
+                alt="Elian Abboud portrait"
+                loading="lazy"
+                className="relative h-64 w-full max-w-[256px] rounded-full object-cover object-top shadow-[0_0_45px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+
+            {/* Floating dots */}
+            <span className="absolute left-7 top-10 h-3.5 w-3.5 rounded-full bg-[#d4a85a] animate-float" />
+            <span
+              className="absolute right-4 top-24 h-3.5 w-3.5 rounded-full bg-[#b18947] animate-float"
+              style={{ animationDelay: "0.9s" }}
+            />
+            <span
+              className="absolute left-14 bottom-6 h-3.5 w-3.5 rounded-full bg-[#d4a85a] animate-float"
+              style={{ animationDelay: "1.6s" }}
             />
           </div>
         </AnimatedSection>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="relative mt-12 flex justify-center">
+        <div className="hero-scroll-indicator">
+          <span>SCROLL</span>
+          <span className="relative inline-flex h-12 w-0.5 items-end justify-center overflow-hidden bg-[#b18947]/20">
+            <span className="absolute bottom-0 block h-full w-full bg-[#b18947] animate-scroll-line" />
+          </span>
+        </div>
       </div>
     </section>
   );
