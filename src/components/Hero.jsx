@@ -92,7 +92,8 @@ export default function Hero({
               {/* التعديل هنا: إزالة السلاش وتحديد اسم الملف المحمل */}
               <a
                 href={cvFile}
-                download="Elian_Abboud_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-outline-gold"
                 aria-label="Download CV"
               >
