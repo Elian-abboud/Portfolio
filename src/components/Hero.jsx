@@ -88,8 +88,9 @@ export default function Hero({
                 View Projects
               </button>
 
+              {/* ✅ FIXED HERE */}
               <a
-                href="/Elian_Abboud_CV.pdf"
+                href={`${import.meta.env.BASE_URL}Elian_Abboud_CV.pdf`}
                 download
                 className="btn-outline-gold"
                 aria-label="Download CV"
