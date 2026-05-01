@@ -95,7 +95,7 @@ export default function Hero({
                 className="btn-outline-gold"
               >
                 <FiEye className="h-4 w-4" />
-                View My CV
+                View my CV
               </a>
               <button
                 onClick={() => handleScroll("contact")}
