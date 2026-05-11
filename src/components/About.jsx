@@ -3,8 +3,8 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 export default function About({ TorusDecor, AnimatedSection }) {
   const infoCards = [
     { label: "Role", value: "Frontend Developer" },
-    { label: "Experience", value: "More than 5 years" },
-    { label: "Education", value: "Informatics Engineer" },
+    { label: "Experience", value: "about 5 years" },
+    { label: "Education", value: "Bachelor of Informatics Engineer" },
     { label: "Location", value: "Syria" },
   ];
 
