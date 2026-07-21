@@ -1,5 +1,5 @@
 import { FiCode, FiMail, FiEye } from "react-icons/fi";
-import cvFile from "../assets/Elian_Abboud_CV.pdf";
+import cvFile from "../assets/Elian_Abboud_CV2.pdf";
 export default function Hero({
   handleMouseMove,
   pointer,
