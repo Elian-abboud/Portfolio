@@ -210,9 +210,9 @@ const projects = [
 
 const certifications = [
   "Meta Front-End Developer Specialization",
+  "Google AI (8-Course Professional Certificate)",
+  "Building AI Agents – Fundamentals to Advanced",
   "Developing Websites and Front-Ends with Bootstrap",
-  "Getting Started with Front-End and Web",
-  "Web Development Fundamentals",
   "Intro to Generative AI",
   "AI for Everyone",
   "SQL Intermediate",
