@@ -49,10 +49,13 @@ export default function About({ TorusDecor, AnimatedSection }) {
               </h3>
 
               <p className="mt-4 leading-8 text-[#a09070]">
-                I focus on clean, user-centric interfaces and performant React
-                applications that feel elegant on every screen. My work blends
-                technical precision with design sensitivity, always aiming for
-                responsive layouts and intuitive interactions.
+                "I’m an Informatics Engineer and Front-End Developer who crafts
+                high-performance, user-centric web applications with React.js
+                and modern CSS. My work blends design sensitivity with
+                engineering precision—delivering sleek, responsive interfaces
+                backed by a strong foundation in system administration, SQL
+                databases, and AI-driven workflow automation. I bridge the gap
+                between complex back-end logic and intuitive user experiences."
               </p>
             </div>
           </AnimatedSection>
